@@ -17,7 +17,7 @@ The data used in the model corresponds to historical loans and key financial var
 
 ## Results
 
-The results of the three key metrics described in the last paragraph are shown below for each model.
+* The results of the three key metrics described in the last paragraph are shown below for each model.
 
 Machine Learning Model 1 metrics:
 
