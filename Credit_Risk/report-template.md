@@ -17,30 +17,32 @@ The data used in the model corresponds to historical loans and key financial var
 
 ## Results
 
-* The results of the three key metrics described in the last paragraph are shown below for each model.
+The results of the three key metrics described are shown in the below for each model.
 
-Machine Learning Model 1 metrics:
+* Machine Learning Model 1 metrics:
 
-Balance Accuracy score: 95.8%
-Precision score:
-Healthy loans: 100%
-High-risk loans: 85%
-Average: 99%
-Recall scores:
-Healthy loans: 99%
-High-risk loans: 92%
-Average:99%
-Machine Learning Model 2 metrics:
+  * Balance Accuracy score: 95.8%
+  * Precision score:
+  * Healthy loans: 100%
+  * High-risk loans: 85%
+  * Average: 99%
+  * Recall scores:
+  * Healthy loans: 99%
+  * High-risk loans: 92%
+  * Average:99%
+ 
+* Machine Learning Model 2 metrics:
 
-Balance Accuracy score: 99.6%
-Precision score:
-Healthy loans: 100%
-High-risk loans: 85%
-Average: 100%
-Recall scores:
-Healthy loans: 99%
-High-risk loans: 100%
-Average: 99%
+  * Balance Accuracy score: 99.6%
+  * Precision score:
+  * Healthy loans: 100%
+  * High-risk loans: 85%
+  * Average: 100%
+  * Recall scores:
+  * Healthy loans: 99%
+  * High-risk loans: 100%
+  * Average: 99%
+
 From this results we can make the following conclusions:
 
 The Balance Accuracy shows that there is an overall significant improvement in the model recall from 95.8% to 99.6% when applying oversampling. This improvement comes from the improvement in the recall of hig-risk loans, as it will be explained next.
