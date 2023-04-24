@@ -28,7 +28,7 @@ The results of the three key metrics described are shown in the below for each m
     * Average: 99%
   * Recall scores:
     * Healthy loans: 99%
-    * High-risk loans: 92%
+    * High-risk loans: 91%
     * Average:99%
 
 * Machine Learning Model 2 metrics:
@@ -36,31 +36,16 @@ The results of the three key metrics described are shown in the below for each m
   * Balance Accuracy score: 99.6%
   * Precision score:
     * Healthy loans: 100%
-    * High-risk loans: 85%
-    * Average: 100%
+    * High-risk loans: 84%
+    * Average: 99%
   * Recall scores:
     * Healthy loans: 99%
-    * High-risk loans: 100%
+    * High-risk loans: 99%
     * Average: 99%
-
-From this results we can make the following conclusions:
-
-* The Balance Accuracy shows that there is an overall significant improvement in the model recall from 95.8% to 99.6% when applying oversampling. This improvement comes from the improvement in the recall of hig-risk loans, as it will be explained next.
-
-* When including resampling, there is an optimal improvement in the recall from 92% to 100%. That means that all of the negative falses (loans declared as healthy when they were highly risky) now are correctly labeled as 1 (high-risk loan). This is great in terms of controling the cost associated to the default of loans. Without resampling, the bank would have to absorve the cost of the high-risk loans that were incorrectly classified as healthy. Fortunately, when applying the resample to control the imbalance, we see that the cost of default is prevented by the improved model at the highest level.
-
-* High-risk loans has the same precision of 85% in both models. This means that the oversampling does not increase the capacity of the model to predict more    efficiently the high-risk loans. In other words, the proportion of incorrect predictions of healthy loans as high-risk loans (false positives), and the opportunity cost associated to that wrong assesment is the same in both models.
-
-* Healthy loans are predicted with a precision of 100%, which is optimal, and a recall of 99%, which is also very high. This happens in both models. Oversampling does   not make a difference in the classification of this class, and it may be arguably consider not necesary either due to the high performance.
-
-
-
-
 
 ## Summary
 
-Summarise the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
+By comparing the two Logistic Regression machine learning models were constructed and compared on predicting the quality of loans. Model 1 used the imbalanced original data, and Model 2 included a treatment for that imbalance. Both models have positive results. Both have a balance accuracy above 95%, and almost perfect metrics for healthy loans recognition. That said, model 2 have better performance in recognizing high-risk loans, with a recall of 99%, above the 91% of Model 1.
 
-If you do not recommend any of the models, please justify your reasoning.
+Therefore, we recommend to use of Model 2, because its excellent balanced performance. We acknoledge the draw back of falsely classifying healthy loans as risky 0.85 to 0.84 of the time. However that opportunity cost does not imply a risk for the business survival. The more important characteristics is to prevent defaults, and the performance of the model is statistically unbeatable in that respect.
+
