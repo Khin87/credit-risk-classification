@@ -23,9 +23,9 @@ The results of the three key metrics described are shown in the below for each m
 
   * Balance Accuracy score: 95.8%
   * Precision score:
-   * Healthy loans: 100%
-   * High-risk loans: 85%
-   * Average: 99%
+    * Healthy loans: 100%
+    * High-risk loans: 85%
+    * Average: 99%
   * Recall scores:
   * Healthy loans: 99%
   * High-risk loans: 92%
